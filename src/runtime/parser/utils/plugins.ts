@@ -1,6 +1,6 @@
 // @ts-expect-error missing types
 import type { Processor } from 'remark-rehype/lib'
-import type { MDCParseOptions, RehypePlugin, RemarkPlugin } from '@nuxtjs/mdc'
+import type { MDCParseOptions, RehypePlugin, RemarkPlugin } from '@fonnpo/mdc'
 
 export const useProcessorPlugins = async (
   processor: Processor,

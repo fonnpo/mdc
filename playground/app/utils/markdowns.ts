@@ -10,7 +10,7 @@ Inline code \`const codeInline: string = 'highlighted code inline'\`{lang="ts"} 
 
 Code block:
 \`\`\`typescript[filename]{1,3-5}meta
-import { parseMarkdown } from '@nuxtjs/mdc/runtime'
+import { parseMarkdown } from '@fonnpo/mdc/runtime'
 
 async function main(mdc: string) {
   const ast = await parseMarkdown(mdc)

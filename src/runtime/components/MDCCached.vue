@@ -22,8 +22,8 @@
 import { useAsyncData } from 'nuxt/app'
 import type { PropType, DefineComponent } from 'vue'
 import { watch, computed } from 'vue'
-import type { MDCParseOptions, MDCParserResult } from '@nuxtjs/mdc'
-import { createCachedParser } from '@nuxtjs/mdc/runtime'
+import type { MDCParseOptions, MDCParserResult } from '@fonnpo/mdc'
+import { createCachedParser } from '@fonnpo/mdc/runtime'
 
 const props = defineProps({
   tag: {

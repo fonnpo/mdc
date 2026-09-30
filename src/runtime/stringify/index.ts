@@ -3,7 +3,7 @@ import { unified } from 'unified'
 import gfm from 'remark-gfm'
 import mdc, { stringifyFrontMatter } from 'remark-mdc'
 import stringify from 'remark-stringify'
-import type { MDCStringifyOptions, MDCRoot } from '@nuxtjs/mdc'
+import type { MDCStringifyOptions, MDCRoot } from '@fonnpo/mdc'
 import { mdcRemark } from './mdc-remark'
 
 export function createStringifyProcessor(options: MDCStringifyOptions = {}) {

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, watch, onMounted } from 'vue'
 import { useLocalStorage } from '@vueuse/core'
-import type { MDCParserResult } from '@nuxtjs/mdc'
+import type { MDCParserResult } from '@fonnpo/mdc'
 import { stringifyMarkdown } from '../../../src/runtime/stringify'
 import { markdownFeatures, samllDemo, table } from '../utils/markdowns'
 import { parseMarkdown } from '../../../src/runtime'

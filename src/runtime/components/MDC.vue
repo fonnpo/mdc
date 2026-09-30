@@ -21,7 +21,7 @@
 import { useAsyncData } from 'nuxt/app'
 import type { PropType } from 'vue'
 import { watch, computed } from 'vue'
-import type { MDCParseOptions } from '@nuxtjs/mdc'
+import type { MDCParseOptions } from '@fonnpo/mdc'
 
 const props = defineProps({
   tag: {
@@ -87,7 +87,7 @@ const { data, refresh, error } = await useAsyncData(key.value, async () => {
   if (typeof props.value !== 'string') {
     return props.value
   }
-  const { parseMarkdown } = await import('@nuxtjs/mdc/runtime')
+  const { parseMarkdown } = await import('@fonnpo/mdc/runtime')
   return await parseMarkdown(props.value, {
     ...props.parserOptions,
     toc: props.partial ? false : props.parserOptions?.toc,

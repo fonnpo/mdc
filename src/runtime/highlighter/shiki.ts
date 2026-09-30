@@ -2,7 +2,7 @@ import type { CodeToHastOptions } from 'shiki/core'
 import type { HighlighterCore, LanguageInput, ShikiTransformer, ThemeInput, RegexEngine } from '@shikijs/types'
 import { createJavaScriptRegexEngine } from '@shikijs/engine-javascript'
 import type { Element } from 'hast'
-import type { MdcConfig, Highlighter } from '@nuxtjs/mdc'
+import type { MdcConfig, Highlighter } from '@fonnpo/mdc'
 
 export interface CreateShikiHighlighterOptions {
   /* An array of themes to be loaded initially */
@@ -110,7 +110,7 @@ export function createShikiHighlighter({
       else {
         // eslint-disable-next-line nuxt/prefer-import-meta
         if (process.dev) {
-          console.warn(`[@nuxtjs/mdc] Language "${lang}" is not loaded to the Shiki highlighter, fallback to plain text. Add the language to "mdc.highlight.langs" to fix this.`)
+          console.warn(`[@fonnpo/mdc] Language "${lang}" is not loaded to the Shiki highlighter, fallback to plain text. Add the language to "mdc.highlight.langs" to fix this.`)
         }
         lang = 'text'
       }
@@ -124,7 +124,7 @@ export function createShikiHighlighter({
         else {
           // eslint-disable-next-line nuxt/prefer-import-meta
           if (process.dev) {
-            console.warn(`[@nuxtjs/mdc] Theme "${theme}" is not loaded to the Shiki highlighter. Add the theme to "mdc.highlight.themes" to fix this.`)
+            console.warn(`[@fonnpo/mdc] Theme "${theme}" is not loaded to the Shiki highlighter. Add the theme to "mdc.highlight.themes" to fix this.`)
           }
           themesObject[color] = 'none'
         }

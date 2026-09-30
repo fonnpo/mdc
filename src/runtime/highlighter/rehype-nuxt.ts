@@ -1,4 +1,4 @@
-import type { HighlightResult, RehypeHighlightOption } from '@nuxtjs/mdc'
+import type { HighlightResult, RehypeHighlightOption } from '@fonnpo/mdc'
 import { rehypeHighlight as rehypeHighlightUniversal } from './rehype'
 import { useRuntimeConfig } from '#imports'
 

@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@nuxtjs/mdc-playground",
+  "name": "@fonnpo/mdc-playground",
   "type": "module",
   "scripts": {
     "dev": "nuxi dev",
@@ -10,7 +10,7 @@
   "devDependencies": {
     "@iconify-json/lucide": "^1.2.121",
     "@monaco-editor/loader": "^1.7.0",
-    "@nuxtjs/mdc": "workspace:*",
+    "@fonnpo/mdc": "workspace:*",
     "@nuxtlabs/monarch-mdc": "^0.10.0",
     "nuxt": "^4.5.1"
   }

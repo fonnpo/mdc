@@ -4,7 +4,7 @@ import rehypeExternalLinks from 'rehype-external-links'
 import rehypeSortAttributeValues from 'rehype-sort-attribute-values'
 import rehypeSortAttributes from 'rehype-sort-attributes'
 import rehypeRaw from 'rehype-raw'
-import type { MDCParseOptions } from '@nuxtjs/mdc'
+import type { MDCParseOptions } from '@fonnpo/mdc'
 import handlers from './handlers'
 
 export const defaults: MDCParseOptions = {

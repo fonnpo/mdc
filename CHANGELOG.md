@@ -1381,7 +1381,7 @@
 
 ### 🩹 Fixes
 
-- Exclude `@nuxtjs/mdc` from vite optimization ([ac3cd57](https://github.com/nuxt-content/mdc/commit/ac3cd57))
+- Exclude `@fonnpo/mdc` from vite optimization ([ac3cd57](https://github.com/nuxt-content/mdc/commit/ac3cd57))
 - Typecheck ([f65b3e9](https://github.com/nuxt-content/mdc/commit/f65b3e9))
 - **types:** Undefined check ([edbc6b0](https://github.com/nuxt-content/mdc/commit/edbc6b0))
 

@@ -1,4 +1,4 @@
-import type { MDCParseOptions, MDCParserResult, MDCRoot } from '@nuxtjs/mdc'
+import type { MDCParseOptions, MDCParserResult, MDCRoot } from '@fonnpo/mdc'
 
 export function createCachedParser(parserOptions: MDCParseOptions) {
   // Create a processor with the necessary plugins
@@ -9,7 +9,7 @@ export function createCachedParser(parserOptions: MDCParseOptions) {
 
   return async function parse(value: string) {
     if (!processor) {
-      processor = await import('@nuxtjs/mdc/runtime').then(m => m.createParseProcessor({
+      processor = await import('@fonnpo/mdc/runtime').then(m => m.createParseProcessor({
         ...parserOptions,
         keepPosition: true,
       }))

@@ -1,5 +1,5 @@
 import type { VNode } from 'vue'
-import type { MDCElement, MDCNode, MDCText } from '@nuxtjs/mdc'
+import type { MDCElement, MDCNode, MDCText } from '@fonnpo/mdc'
 
 /**
  * List of text nodes

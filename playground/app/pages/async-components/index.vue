@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import { parseMarkdown } from '@nuxtjs/mdc/runtime'
+import { parseMarkdown } from '@fonnpo/mdc/runtime'
 import { useAsyncData } from '#imports'
 
 const md = `# Simple Async Example

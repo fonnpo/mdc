@@ -1,4 +1,4 @@
-import type { MDCElement, MDCNode } from '@nuxtjs/mdc'
+import type { MDCElement, MDCNode } from '@fonnpo/mdc'
 
 export function flattenNodeText(node: MDCNode): string {
   if (node.type === 'comment') {

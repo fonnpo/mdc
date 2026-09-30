@@ -76,7 +76,7 @@ export const validateProps = (type: string, props?: Record<string, any>) => {
       const isValid = validateProp(name, value)
 
       if (!isValid) {
-        console.warn(`[@nuxtjs/mdc] removing unsafe attribute: ${name}="${value}"`)
+        console.warn(`[@fonnpo/mdc] removing unsafe attribute: ${name}="${value}"`)
       }
 
       return isValid

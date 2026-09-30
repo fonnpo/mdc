@@ -4,7 +4,7 @@ import remark2rehype from 'remark-rehype'
 import { parseFrontMatter } from 'remark-mdc'
 import type { VFile, Options as VFileOptions } from 'vfile'
 import { defu } from 'defu'
-import type { MdcConfig, MDCData, MDCElement, MDCParseOptions, MDCParserResult, MDCRoot, Toc } from '@nuxtjs/mdc'
+import type { MdcConfig, MDCData, MDCElement, MDCParseOptions, MDCParserResult, MDCRoot, Toc } from '@fonnpo/mdc'
 import { nodeTextContent } from '../utils/node'
 import { useProcessorPlugins } from './utils/plugins'
 import { defaults } from './options'
@@ -41,7 +41,7 @@ export const createParseProcessor = async (inlineOptions: MDCParseOptions = {}) 
   if (inlineOptions.highlight != null && inlineOptions.highlight != false && inlineOptions.highlight.highlighter !== undefined && typeof inlineOptions.highlight.highlighter !== 'function') {
     // eslint-disable-next-line nuxt/prefer-import-meta
     if (process.dev)
-      console.warn('[@nuxtjs/mdc] `highlighter` passed to `parseMarkdown` is should be a function, but got ' + JSON.stringify(inlineOptions.highlight.highlighter) + ', ignored.')
+      console.warn('[@fonnpo/mdc] `highlighter` passed to `parseMarkdown` is should be a function, but got ' + JSON.stringify(inlineOptions.highlight.highlighter) + ', ignored.')
     inlineOptions = {
       ...inlineOptions,
       highlight: {

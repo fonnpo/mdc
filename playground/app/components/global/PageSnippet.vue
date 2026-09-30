@@ -21,8 +21,8 @@
 /**
  * This component is exposed as `snippet` in MDC markdown files
  */
-import { parseMarkdown } from '@nuxtjs/mdc/runtime'
-import type { MDCParserResult, MDCRoot } from '@nuxtjs/mdc'
+import { parseMarkdown } from '@fonnpo/mdc/runtime'
+import type { MDCParserResult, MDCRoot } from '@fonnpo/mdc'
 import { computed, provide, inject, useState, useId, serveCachedData, useAsyncData, useFetch } from '#imports'
 
 const props = defineProps({

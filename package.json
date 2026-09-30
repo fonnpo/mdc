@@ -1,8 +1,8 @@
 {
-  "name": "@nuxtjs/mdc",
-  "version": "0.23.1",
+  "name": "@fonnpo/mdc",
+  "version": "0.23.2",
   "description": "Nuxt MDC module",
-  "repository": "nuxt-content/mdc",
+  "repository": "fonnpo/mdc",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -54,9 +54,9 @@
     }
   },
   "scripts": {
-    "prepack": "nuxt-module-build prepare; nuxt-module-build build",
-    "build": "nuxt-module-build prepare; nuxt-module-build build",
-    "dev": "npm run dev:prepare; nuxi dev playground",
+    "prepack": "nuxt-module-build prepare && nuxt-module-build build",
+    "build": "nuxt-module-build prepare && nuxt-module-build build",
+    "dev": "npm run dev:prepare && nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build prepare && nuxt-module-build build && nuxi prepare playground",
     "dev:docs": "nuxi dev docs",
@@ -120,7 +120,7 @@
     "@nuxt/schema": "^4.5.1",
     "@nuxt/test-utils": "^4.1.0",
     "@nuxt/ui": "^4.10.0",
-    "@nuxtjs/mdc": "link:.",
+    "@fonnpo/mdc": "link:.",
     "@types/node": "^26.1.2",
     "eslint": "^10.8.0",
     "nuxt": "^4.5.1",
@@ -133,7 +133,7 @@
   "resolutions": {
     "mkdist": "2.3.0"
   },
-  "packageManager": "pnpm@11.20.0",
+  "packageManager": "pnpm@10.34.5",
   "release-it": {
     "git": {
       "commitMessage": "chore(release): release v${version}"

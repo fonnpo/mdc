@@ -1,7 +1,7 @@
 import { expect, it } from 'vitest'
 import { parseMarkdown } from '../utils/parser'
 import { stringifyMarkdown } from '../../src/runtime/stringify'
-import type { MDCElement } from '@nuxtjs/mdc'
+import type { MDCElement } from '@fonnpo/mdc'
 
 it('Element in heading', async () => {
   const { body } = await parseMarkdown('### :hello')
