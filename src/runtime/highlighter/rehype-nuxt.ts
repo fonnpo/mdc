@@ -36,8 +36,11 @@ const defaults: RehypeHighlightOption = {
         }
       }
 
+      const long = (code || '').split('\n').length > 260
+
       const result = await $fetch<HighlightResult | undefined>('/api/_mdc/highlight', {
-        params: {
+        method: long ? 'POST' : 'GET',
+        [long ? 'body' : 'params']: {
           code,
           lang,
           theme: JSON.stringify(theme),
